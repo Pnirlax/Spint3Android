@@ -5,23 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/gradientbackground"
     tools:context=".ui.RegisterActivity">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+    </com.google.android.material.textfield.TextInputLayout>
     <EditText
-        android:hint="First Name"
+        android:hint="Full Name"
         android:layout_margin="10dp"
         android:id="@+id/etFname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:hint="Last Name"
-        android:layout_margin="10dp"
-        android:id="@+id/etLname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
         android:hint="Username"
         android:layout_margin="10dp"
         android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Email"
+        android:layout_margin="10dp"
+        android:id="@+id/etLname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -44,7 +56,7 @@
     <Button
         android:text="Add User"
         android:layout_margin="10dp"
-        android:id="@+id/btnAddStudent"
+        android:id="@+id/btnAddDoctor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>

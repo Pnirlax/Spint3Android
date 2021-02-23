@@ -4,25 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.DashboardActivity">
+    android:background="@drawable/gradientbackground"
+    tools:context="ui.DisplayStudentActivity">
 
-    <Button
-        android:id="@+id/btnAddStudent"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="List of Doctor"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_marginTop="50dp"
-        android:text="Add Student"
+        android:id="@+id/rvDisplayStudents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cdf7db"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnDisplayStudent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Display Student"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAddStudent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

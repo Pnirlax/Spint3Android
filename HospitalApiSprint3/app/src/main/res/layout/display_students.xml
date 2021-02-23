@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/gradientbackground"
     android:layout_height="wrap_content"
     >
 
@@ -75,9 +76,9 @@
                 android:id="@+id/imgUpdate"
                 android:layout_width="29dp"
                 android:layout_height="29dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="76dp"
-                android:layout_marginRight="76dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
                 android:src="@drawable/edit"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -86,9 +87,9 @@
                 android:id="@+id/imgDelete"
                 android:layout_width="29dp"
                 android:layout_height="29dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
                 android:src="@drawable/delete"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
